@@ -1,0 +1,12 @@
+CREATE TABLE students (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(32) NOT NULL,
+  admission_year INT NOT NULL,
+  major_code VARCHAR(4) NOT NULL,
+  serial VARCHAR(4) NOT NULL,
+  phone VARCHAR(20),
+  address VARCHAR(100),
+  credit INT DEFAULT 0,
+  gpa FLOAT DEFAULT 0.0,
+  enrolled BOOLEAN DEFAULT TRUE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
